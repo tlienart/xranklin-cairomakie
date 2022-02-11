@@ -1,5 +1,5 @@
 +++
 author = "Octavian"
 
-prepath = "xranklin-plots"
+prepath = "xranklin-cairomakie"
 +++
