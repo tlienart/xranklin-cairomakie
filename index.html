@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="franklin-content" >
+  <h1 id="hello" ><a href="#hello"> Hello</a></h1><p>abc</p>
+<pre><code class="julia">using CairoMakie
+
+x = range(0, 10, length=100)
+y1 = sin.(x)
+y2 = cos.(x)
+
+scatter(x, y1, color = :red, markersize = range(5, 15, length=100))
+sc = scatter!(x, y2, color = range(0, 1, length=100), colormap = :thermal)
+
+current_figure()</code></pre>
+<div class="code-output"><pre><code class="code-stdout language-plaintext">┌ Warning: unknown command \Join
+└ @ MathTeXEngine ~/.julia/packages/MathTeXEngine/ZP0gS/src/parser/commands_registration.jl:48
+┌ Warning: precompile directive
+│     precompile(fbody, (Nothing, Nothing, Nothing, Nothing, Nothing, Al, Tuple{Bool, Bool}, Rect2f, Auto, Auto, Bool, Bool, Symbol, Symbol, Float64, Float64, Emptykwargs, Type{GridLayout}, Int, Int))
+│ failed. Please report an issue in GridLayoutBase (after checking for duplicates) or remove this directive.
+└ @ GridLayoutBase ~/.julia/packages/GridLayoutBase/CSLqD/src/precompile.jl:31
+┌ Warning: precompile directive
+│     precompile(fbody, (Nothing, Nothing, Nothing, Nothing, Nothing, Al, Tuple{Bool, Bool}, Rect2f, Auto, Auto, Bool, Bool, Symbol, Symbol, Float64, Float64, Emptykwargs, Type{GridLayout}, Int, Int))
+│ failed. Please report an issue in GridLayoutBase (after checking for duplicates) or remove this directive.
+└ @ GridLayoutBase ~/.julia/packages/GridLayoutBase/CSLqD/src/precompile.jl:31
+┌ Warning: precompile directive
+│     precompile(fbody, (Nothing, Nothing, Nothing, Nothing, Nothing, Al, Tuple{Bool, Bool}, Rect2f, Auto, Auto, Bool, Bool, Symbol, Symbol, Float64, Float64, Emptykwargs, Type{GridLayout}, Int, Int))
+│ failed. Please report an issue in GridLayoutBase (after checking for duplicates) or remove this directive.
+└ @ GridLayoutBase ~/.julia/packages/GridLayoutBase/CSLqD/src/precompile.jl:31
+</code></pre><img class="code-figure" src="/xranklin-plots/assets/index/figs-html/__autofig_9865503626059762714.svg">
+</div>
+  
+</div>
+
+
+
+  </body>
+</html>
